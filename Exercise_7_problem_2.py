@@ -37,7 +37,7 @@ print(len(data))
 # - Store the selection in a new variable `selection`
 
 # YOUR CODE HERE 2
-selection=data.loc['DATE']>datetime['1988-01-01':'2018-12-31']
+selection=data.loc['1988-01-01':'2018-12-31']
 selection.head()
 # Check that the data was read in correctly:
 selection.head()

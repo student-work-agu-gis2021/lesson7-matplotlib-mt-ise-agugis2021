@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 # YOUR CODE HERE 1 to set data
-
+data=pd.DataFrame(np.random.rand(2000).reshape(1000,2),columns=['x','y'])
 # Check your random values
 print(data.head())
 

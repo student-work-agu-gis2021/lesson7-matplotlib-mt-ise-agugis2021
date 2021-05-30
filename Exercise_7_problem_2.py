@@ -53,26 +53,23 @@ print("Number of rows:", len(selection))
 #      
 # #### Part 3.2
 # 
+
+
 # Save your figure as PNG file called `temp_line_plot.png`.
 # 
 
 # YOUR CODE HERE 3
-import matplotlib.pyplot as plt
-ax=selection['TEMP_C']
-plot=ax.plot(style='ko',linestyl="solid",markersize=3,figsize=(14,6),title="Helsinki-Vantaa Airport")
+ax = selection['TEMP_C']
+plot = ax.plot(style = 'ko',linestyle = "solid",markersize = 3,
+figsize = (14,6),title = "Helsinki-Vantaa Airport")
 plot.set_xlabel('Time')
-plot.set_ylabel('Temperature(Celsius)')
+plot.set_ylabel('Temperature (Celsius)')
 plot.grid()
-# Set output file name
-outputfp = "temp_line_plot.png"
-plt.savefig(outputfp)
-plt.show()
-
 # Save plot as image
 # YOUR CODE HERE 4
 outputfp="temp_line_plot.png"
-plt.savvefig(outputfp)
-import os
+plt.savefig(outputfp)
+plt.show()
 
 #Check that output file exists (also open the file and check that the plot looks ok!)
 os.path.exists(outputfp)

@@ -17,6 +17,8 @@
 
 import numpy as np
 import pandas as pd
+from matplotlib import pyplot as plt
+from matplotlib import cm
 
 # YOUR CODE HERE 1 to set data
 data=pd.DataFrame(np.random.rand(2000).reshape(1000,2),columns=['x','y'])

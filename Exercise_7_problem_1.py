@@ -52,15 +52,20 @@ assert len(colors) == 1000, "There should be 1000 random numbers for colors"
 
 # Plot a scatter plot
 # YOUR CODE HERE 3
-
+data.plot(kind='scatter',x='x',y='y',s=50,c=colors,colormap='prism',edgecolor='black')
 # Add labels and title
 # YOUR CODE HERE 4
-
+title="My random candy points"
+xlabel="X-label"
+ylabel="Y-label"
+plt.title("My random candy points")
+plt.xlabel("xlabel")
+plt.ylabel("ylabel")
 # Save the plot as a png file:
 outputfp = "my_first_plot.png"
 
 # YOUR CODE HERE 5
-
+plt.savefig("my_first_plot.png")
 # This test print statement should print the output filename of your figure
 print("Saved my first plot as:", outputfp)
 
